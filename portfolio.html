@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Metadata Dokumen HTML5 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Daftar Karya & Proyek</title>
+
+    <!-- 1. PENERAPAN CSS EKSTERNAL (style.css) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 2. PENERAPAN CSS INTERNAL (Khusus Halaman Portofolio) -->
+    <style>
+        /* Gaya internal untuk label kategori proyek */
+        .badge-tech {
+            display: inline-block;
+            background-color: #ebf5fb;
+            color: #2980b9;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .step-box {
+            background-color: #fcfcfc;
+            border-left: 4px solid #1abc9c;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= NAVIGASI MENU (3 Halaman) ================= -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="portfolio.html" class="active">Portofolio</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= KONTEN UTAMA ================= -->
+    <main class="container">
+
+        <!-- SECTION 1: PROYEK & TUGAS KULIAH -->
+        <section class="card">
+            <h2>Daftar Proyek & Praktikum</h2>
+
+            <div class="project-grid">
+
+                <!-- Foto 1 -->
+                <div class="project-item">
+                    <img src="itfest.png" alt="design untuk proposal kegiatan itfest" class="project-img">
+                    <p>design untuk proposal kegiatan itfest</p>
+                </div>
+
+                <!-- Foto 2 -->
+                <div class="project-item">
+                    <img src="reformatics.jpg" alt="design untuk narasumber yang hadir dalam reformatics" class="project-img">
+                    <p>design untuk narasumber yang hadir dalam reformatics</p>
+                </div>
+
+                <!-- Foto 3 -->
+                <div class="project-item">
+                    <img src="proker-himti.jpg" alt="design untuk proker himpunan teknik informatika" class="project-img">
+                    <p>design untuk proker himpunan teknik informatika</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

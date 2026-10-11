@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Metadata Dokumen HTML5 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Portofolio Pribadi</title>
+
+    <!-- 1. PENERAPAN CSS EKSTERNAL (style.css) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 2. PENERAPAN CSS INTERNAL (Khusus Halaman Beranda) -->
+    <style>
+        /* Gaya khusus untuk badge selamat datang di halaman beranda */
+        .welcome-badge {
+            background-color: #e8f8f5;
+            color: #16a085;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border: 1px solid #a3e4d7;
+        }
+
+        /* Highlight teks khusus */
+        .text-highlight {
+            color: #2980b9;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= NAVIGASI MENU (3 Halaman) ================= -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Beranda</a></li>
+            <li><a href="portfolio.html">Portofolio</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= KONTEN UTAMA ================= -->
+    <main class="container">
+        
+        <!-- SECTION 1: PROFIL & BIODATA -->
+        <section class="card">
+            <div class="profile-box">
+                <!-- Elemen Gambar (Image) -->
+                <img src="foto-profil.jpg" 
+                     alt="Foto Profil Muhammad Fitrahnuddin Akram" 
+                     class="profile-img">
+
+                <!-- Elemen Teks & Biodata -->
+                <div class="profile-bio">
+                    <!-- Contoh CSS Inline untuk warna teks judul -->
+                    <h2 style="color: #2c3e50; border-bottom: none; margin-bottom: 5px;">Muhammad Fitrahnuddin Akram</h2>
+                    <p style="color: #7f8c8d; margin-bottom: 12px; font-weight: bold;">Mahasiswa Teknik Informatika / Web Developer</p>
+                    <p>
+                        Saya adalah mahasiswa yang memiliki minat besar dalam bidang pengembangan web (*web development*) dan desain antarmuka pengguna. Selalu antusias mempelajari teknologi baru dan membuat program yang bermanfaat.
+                    </p>
+                    
+                    <!-- Elemen Link & Button -->
+                    <div style="margin-top: 15px;">
+                        <a href="contact.html" class="btn btn-primary">Hubungi Saya</a>
+                        <a href="portfolio.html" class="btn btn-secondary">Lihat Portofolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: BIODATA LENGKAP & KEAHLIAN -->
+        <section class="card">
+            <h2>Biodata Diri</h2>
+            
+            <!-- Elemen List Tak Berurutan (Unordered List) -->
+            <ul style="line-height: 1.8;">
+                <li><strong>Nama Lengkap:</strong> Muhammad Fitrahnuddin Akram</li>
+                <li><strong>Program Studi:</strong> S1 Teknik Informatika</li>
+                <li><strong>Universitas:</strong> Universitas Paramadina</li>
+            </ul>
+
+            <h3>Minat & Keahlian:</h3>
+            <!-- Elemen List Tak Berurutan (Unordered List) -->
+            <ul>
+                <li>Dasar Pemrograman JavaScript & PHP</li>
+                <li>Desain Grafis & Wireframing menggunakan Figma, Adobe Illustrator</li>
+                <li>Pengelolaan Basis Data MySQL Dasar menggunakan XAMPP, MongoDB, Laragon</li>
+            </ul>
+        </section>
+
+        <!-- SECTION 3: RIWAYAT PENDIDIKAN (Elemen TABLE) -->
+        <section class="card">
+            <h2>Riwayat Pendidikan</h2>
+
+            <!-- Elemen Tabel (Table) -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Jenjang</th>
+                        <th>Nama Sekolah / Institusi</th>
+                        <th>Tahun</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SMP</td>
+                        <td>SMPN 171 JAKARTA</td>
+                        <td>2019 - 2022</td>
+                        <td>Lulus</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SMA / SMK</td>
+                        <td>SMA PRESTASI PRIMA</td>
+                        <td>2022 - 2025</td>
+                        <td>Lulus</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Perguruan Tinggi</td>
+                        <td>UNIVERSITAS PARAMADINA</td>
+                        <td>2025 - Sekarang</td>
+                        <!-- Contoh CSS Inline untuk teks status -->
+                        <td><span style="color: #16a085; font-weight: bold;">Sedang Menempuh Pendidikan</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+</body>
+</html>
